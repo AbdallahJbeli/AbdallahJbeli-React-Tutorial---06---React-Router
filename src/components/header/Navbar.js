@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import "./navbar.css";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <nav className="navbar">
@@ -18,16 +18,16 @@ const Navbar = () => {
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

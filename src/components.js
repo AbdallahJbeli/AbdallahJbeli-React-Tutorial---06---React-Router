@@ -1,6 +1,9 @@
 import Navbar from './components/header/Navbar';
-import Content from './components/content/Content';
+import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
+import About from './components/about/About';
+import Services from './components/services/Services';
+import Contact from './components/contact/Contact';
 
 
-export { Navbar, Content, Footer };
+export { Navbar, Home, Footer, About, Services, Contact };
