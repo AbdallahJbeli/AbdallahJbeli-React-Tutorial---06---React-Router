@@ -1,16 +1,16 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar, Home, Footer, About, Services, Contact } from './components';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { Navbar, Home, Footer, About, Services, Contact } from "./components";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <div className='header'>
+        <div className="header">
           <Navbar />
         </div>
-        <div className='content'>
+        <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -18,7 +18,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <div className='footer'>
+        <div className="footer">
           <Footer />
         </div>
       </div>

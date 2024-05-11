@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import './navbar.css';
+import "./navbar.css";
 
 const Navbar = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-  };
+  }
 
   return (
     <nav className="navbar">
